@@ -18,10 +18,52 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/plugins/jquery-flipster/dist/jquery.flipster.min.css">
 
-    <link id="theme-style" rel="stylesheet" href="css/style.css">
+    <link id="style" rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+ <header class="header">
+
+        <div class="branding">
+
+            <div class="container position-relative">
+
+				<nav class="navbar navbar-expand-lg" >
+                    <h1 class="site-logo"><a class="navbar-brand" href=""><span class="logo-text">MisterZtr</span></a></h1>
+				</nav>
+
+				<!-- // Free Version ONLY -->
+				<ul class="social-list list-inline mb-0 position-absolute">
+<!--					<li class="list-inline-item"><a class="text-dark" href=""><i class="fas fa-language fa-lg fa-fw"></i></a></li>-->
+	                <li class="list-inline-item"><a class="text-dark" href="https://github.com/JustForEducate"><i class="fab fa-github fa-fw"></i></a></li>
+
+	                 </ul><!--//social-list-->
+            </div><!--//container-->
+
+        </div><!--//branding-->
+
+    </header><!--//header-->
+
+<div data-view-component="true" class="js-toggler-container js-social-container starring-container d-flex">
+    <div data-view-component="true" class="starred BtnGroup flex-1">
+      <form class="js-social-form BtnGroup-parent flex-auto width-full js-deferred-toggler-target" data-turbo="false" action="/JustForEducate/MyNamesJovaneJordjo/unstar" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="fdezIRhOgG1mRMjLR1x3mqungjM6eNOF5GFbDi2EaFi5vuL24IuC-NHRx5rTSDAi9iYzm3aZoJjftOUQCI6xUg" autocomplete="off">
+          <input type="hidden" value="nN3X4Yq_SmScdux2v_2_yWNH1CkOeWad3LZs9s1zYYpYtIY2cnpI8Svj4ycr6fhxPsZlgUKYFYDnY9Lo6Hm4gA" data-csrf="true" class="js-confirm-csrf-token">
+        <input type="hidden" name="context" value="repository">
+          <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;UNSTAR_BUTTON&quot;,&quot;repository_id&quot;:560346077,&quot;originating_url&quot;:&quot;https://github.com/JustForEducate/MyNamesJovaneJordjo&quot;,&quot;user_id&quot;:117161265}}" data-hydro-click-hmac="6c4d8efedee6f182eb40b4dfb61393a8a525c84b1d42360bf26e1cbfc6d7ddcf" data-ga-click="Repository, click unstar button, action:files#disambiguate; text:Unstar" aria-label="Unstar this repository" type="submit" data-view-component="true" class="rounded-left-2 btn-sm btn btn-block BtnGroup-item">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star-fill starred-button-icon d-inline-block mr-2">
+    <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25z"></path>
+</svg><span data-view-component="true" class="d-inline">
+            Starred
+</span>
+</button></form></div>
+    <div data-view-component="true" class="unstarred BtnGroup flex-1">
+      <form class="js-social-form BtnGroup-parent flex-auto width-full" data-turbo="false" action="/JustForEducate/MyNamesJovaneJordjo/star" accept-charset="UTF-8" method="post"><input type="hidden" name="authenticity_token" value="oxvi7vI62GrgRtTbZFzuEYOEn-2UtYqNR2HVQgqb7--UcIcPECVyfbvquiakBhX2hiovhBbob59axy7Y7J7Nag" autocomplete="off">
+        <input type="hidden" name="context" value="repository">
+          <button data-hydro-click="{&quot;event_type&quot;:&quot;repository.click&quot;,&quot;payload&quot;:{&quot;target&quot;:&quot;STAR_BUTTON&quot;,&quot;repository_id&quot;:560346077,&quot;originating_url&quot;:&quot;https://github.com/JustForEducate/MyNamesJovaneJordjo&quot;,&quot;user_id&quot;:117161265}}" data-hydro-click-hmac="ea6b63a17b698e33430bdeded8075d95f6b61dfb77b5f612877fd24a3531c6d6" data-ga-click="Repository, click star button, action:files#disambiguate; text:Star" aria-label="Star this repository" type="submit" data-view-component="true" class="js-toggler-target rounded-left-2 btn-sm btn btn-block BtnGroup-item">    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star d-inline-block mr-2">
+    <path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path>
+</svg><span data-view-component="true" class="d-inline">
+            Star
+</span>
+</button></form></div></div>
 
 </body>
 </html>
