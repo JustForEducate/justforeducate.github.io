@@ -1,7 +1,3 @@
-AHTBITW.github.io
-
-Филимонов и Примоченко
-
 Hello World
 
 <HTML>
