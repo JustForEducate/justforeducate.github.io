@@ -7,7 +7,6 @@ Hello World
 <HTML>
 <HEAD>
 </HEAD>
-<BODY bgColor=black link=red onload=doit() text=white vLink=red>
 <P>
 <CENTER><FONT color=#cccccc><B><I><FONT face="" size=5><SPAN class=rotateOBJ 
 id=obj1>"Никогда не</SPAN></FONT><BR><FONT face="" size=5><SPAN 
