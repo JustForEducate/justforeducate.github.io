@@ -18,7 +18,7 @@
     --white: #fff;
     --gray: #5c7893;
     --gray-dark: #354554;
-    --primary: #47b0df;
+    --primary: #ee6f5a;
     --secondary: #526b84;
     --success: #28a745;
     --info: #17a2b8;
@@ -141,13 +141,13 @@ sup {
 }
 
 a {
-    color: #47b0df;
+    color: #ee6f5a;
     text-decoration: none;
     background-color: transparent
 }
 
 a:hover {
-    color: #208ab9;
+    color: #c14033;
     text-decoration: underline
 }
 
@@ -2266,13 +2266,13 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-primary {
     color: #fff;
-    background-color: #47b0df;
-    border-color: #47b0df
+    background-color: #ee6f5a;
+    border-color: #ee6f5a
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #26a2d9;
+    background-color: #c14033;
     border-color: #249acf
 }
 
@@ -2282,8 +2282,8 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-primary.disabled, .btn-primary:disabled {
     color: #fff;
-    background-color: #47b0df;
-    border-color: #47b0df
+    background-color: #ee6f5a;
+    border-color: #ee6f5a
 }
 
 .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, .show > .btn-primary.dropdown-toggle {
@@ -2521,14 +2521,14 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-outline-primary {
-    color: #47b0df;
-    border-color: #47b0df
+    color: #ee6f5a;
+    border-color: #ee6f5a
 }
 
 .btn-outline-primary:hover {
     color: #fff;
-    background-color: #47b0df;
-    border-color: #47b0df
+    background-color: #ee6f5a;
+    border-color: #ee6f5a
 }
 
 .btn-outline-primary:focus, .btn-outline-primary.focus {
@@ -2536,14 +2536,14 @@ a.btn.disabled, fieldset:disabled a.btn {
 }
 
 .btn-outline-primary.disabled, .btn-outline-primary:disabled {
-    color: #47b0df;
+    color: #ee6f5a;
     background-color: transparent
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active, .btn-outline-primary:not(:disabled):not(.disabled).active, .show > .btn-outline-primary.dropdown-toggle {
     color: #fff;
-    background-color: #47b0df;
-    border-color: #47b0df
+    background-color: #ee6f5a;
+    border-color: #ee6f5a
 }
 
 .btn-outline-primary:not(:disabled):not(.disabled):active:focus, .btn-outline-primary:not(:disabled):not(.disabled).active:focus, .show > .btn-outline-primary.dropdown-toggle:focus {
@@ -2762,12 +2762,12 @@ a.btn.disabled, fieldset:disabled a.btn {
 
 .btn-link {
     font-weight: 400;
-    color: #47b0df;
+    color: #ee6f5a;
     text-decoration: none
 }
 
 .btn-link:hover {
-    color: #208ab9;
+    color: #c14033;
     text-decoration: underline
 }
 
@@ -3060,7 +3060,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .dropdown-item.active, .dropdown-item:active {
     color: #fff;
     text-decoration: none;
-    background-color: #47b0df
+    background-color: #ee6f5a
 }
 
 .dropdown-item.disabled, .dropdown-item:disabled {
@@ -3341,8 +3341,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .custom-control-input:checked ~ .custom-control-label::before {
     color: #fff;
-    border-color: #47b0df;
-    background-color: #47b0df
+    border-color: #ee6f5a;
+    background-color: #ee6f5a
 }
 
 .custom-control-input:focus ~ .custom-control-label::before {
@@ -3406,8 +3406,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::before {
-    border-color: #47b0df;
-    background-color: #47b0df
+    border-color: #ee6f5a;
+    background-color: #ee6f5a
 }
 
 .custom-checkbox .custom-control-input:indeterminate ~ .custom-control-label::after {
@@ -3628,7 +3628,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     width: 1rem;
     height: 1rem;
     margin-top: -.25rem;
-    background-color: #47b0df;
+    background-color: #ee6f5a;
     border: 0;
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3658,7 +3658,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .custom-range::-moz-range-thumb {
     width: 1rem;
     height: 1rem;
-    background-color: #47b0df;
+    background-color: #ee6f5a;
     border: 0;
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3691,7 +3691,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     margin-top: 0;
     margin-right: .2rem;
     margin-left: .2rem;
-    background-color: #47b0df;
+    background-color: #ee6f5a;
     border: 0;
     border-radius: 1rem;
     transition: background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
@@ -3824,7 +3824,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
     color: #fff;
-    background-color: #47b0df
+    background-color: #ee6f5a
 }
 
 .nav-fill .nav-item {
@@ -4500,14 +4500,14 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
     padding: .5rem .75rem;
     margin-left: -1px;
     line-height: 1.25;
-    color: #47b0df;
+    color: #ee6f5a;
     background-color: #fff;
     border: 1px solid #97abbe
 }
 
 .page-link:hover {
     z-index: 2;
-    color: #208ab9;
+    color: #c14033;
     text-decoration: none;
     background-color: #a7b7c8;
     border-color: #97abbe
@@ -4533,8 +4533,8 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 .page-item.active .page-link {
     z-index: 1;
     color: #fff;
-    background-color: #47b0df;
-    border-color: #47b0df
+    background-color: #ee6f5a;
+    border-color: #ee6f5a
 }
 
 .page-item.disabled .page-link {
@@ -4617,7 +4617,7 @@ a.badge:hover, a.badge:focus {
 
 .badge-primary {
     color: #fff;
-    background-color: #47b0df
+    background-color: #ee6f5a
 }
 
 a.badge-primary:hover, a.badge-primary:focus {
@@ -4919,7 +4919,7 @@ a.badge-dark:focus, a.badge-dark.focus {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #47b0df;
+    background-color: #ee6f5a;
     transition: width 0.6s ease
 }
 
@@ -5007,8 +5007,8 @@ a.badge-dark:focus, a.badge-dark.focus {
 .list-group-item.active {
     z-index: 2;
     color: #fff;
-    background-color: #47b0df;
-    border-color: #47b0df
+    background-color: #ee6f5a;
+    border-color: #ee6f5a
 }
 
 .list-group-horizontal {
@@ -6079,7 +6079,7 @@ a.close.disabled {
 }
 
 .bg-primary {
-    background-color: #47b0df !important
+    background-color: #ee6f5a !important
 }
 
 a.bg-primary:hover, a.bg-primary:focus, button.bg-primary:hover, button.bg-primary:focus {
@@ -6191,7 +6191,7 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
 }
 
 .border-primary {
-    border-color: #47b0df !important
+    border-color: #ee6f5a !important
 }
 
 .border-secondary {
@@ -9400,11 +9400,11 @@ a.bg-dark:hover, a.bg-dark:focus, button.bg-dark:hover, button.bg-dark:focus {
 }
 
 .text-primary {
-    color: #47b0df !important
+    color: #ee6f5a !important
 }
 
 a.text-primary:hover, a.text-primary:focus {
-    color: #208ab9 !important
+    color: #c14033 !important
 }
 
 .text-secondary {
@@ -9637,8 +9637,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .theme-btn-ghost {
     background: none;
-    color: #47b0df;
-    border: 2px solid #47b0df
+    color: #ee6f5a;
+    border: 2px solid #ee6f5a
 }
 
 .theme-btn-on-bg {
@@ -9648,7 +9648,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .theme-btn-on-bg:hover {
     background: #fff;
-    color: #47b0df !important
+    color: #ee6f5a !important
 }
 
 .form-control {
@@ -9702,7 +9702,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .theme-bg-secondary {
-    background-color: #47b0df
+    background-color: #ee6f5a
 }
 
 .single-col-max-width {
@@ -9717,7 +9717,7 @@ h1, h2, h3, h4, h5, h6 {
 .site-logo .logo-text .alt {
     font-size: 1rem;
     background: #dff1f9;
-    color: #47b0df;
+    color: #ee6f5a;
     padding: 2px 4px;
     position: relative;
     top: -6px
