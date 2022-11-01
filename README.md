@@ -8,7 +8,7 @@ Hello World
 <HEAD>
 </HEAD>
 <P>
-<CENTER><FONT color=#cccccc><B><I><FONT face="" size=5><SPAN class=rotateOBJ 
+<CENTER><B><I><FONT face="" size=5><SPAN class=rotateOBJ 
 id=obj1>"Никогда не</SPAN></FONT><BR><FONT face="" size=5><SPAN 
 class=rotateOBJ id=obj2>знаешь чем</SPAN></FONT><BR><FONT face="" 
 size=5><SPAN class=rotateOBJ id=obj3>все это"</SPAN></FONT><BR></I><FONT 
