@@ -9496,6 +9496,10 @@ a.text-dark:hover, a.text-dark:focus {
     overflow-wrap: break-word !important
 }
 
+.text-aboutme {
+margin-top:60px;
+}
+
 .text-reset {
     color: inherit !important
 }
