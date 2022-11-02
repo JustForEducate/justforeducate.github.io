@@ -1,3 +1,3 @@
 Hello World!
 
-justforeducate.github.io
+https://justforeducate.github.io
