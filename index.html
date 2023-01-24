@@ -20,7 +20,64 @@
     <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
 
     <!-- CSS -->
-	<link rel="stylesheet" type="text/css" href="assets/css/github.css">
+<link rel="stylesheet" href="assets/css/menu.css">
+  <div class="main">
+    <div class="navigation">
+      <span style="--i:0;--x:-1;--y:0;">
+	  <a title="Тут пусто">
+		<ion-icon name="skull-outline"></ion-icon>
+		</a>
+	  </span>
+      <span style="--i:1;--x:1;--y:0;">
+	  <a title="Тут пусто">
+		<ion-icon name="skull-outline"></ion-icon>
+		</a>
+      </span>
+      <span style="--i:2;--x:0;--y:-1;">
+	  <a title="Пока что не добавлю">
+      	<ion-icon name="logo-vk"></ion-icon>
+		</a>
+      </span>
+      <span style="--i:3;--x:0;--y:1;">
+	  <a title="Пока что не добавлю">
+      	<ion-icon name="logo-twitch"></ion-icon>
+		</a>
+      </span>
+      <span style="--i:4;--x:-1;--y:1;">
+	  <a title="Пока что не добавлю">
+      	<ion-icon name="logo-steam"></ion-icon>
+		</a>
+      </span>
+      <span style="--i:5;--x:-1;--y:-1;">
+	  <a title="Пока что не добавлю">
+      	<ion-icon name="logo-discord"></ion-icon>
+		</a>
+      </span>
+      <span style="--i:6;--x:1;--y:-1;">
+	  <a href="https://github.com/JustForEducate" title="GitHub">
+      	<ion-icon name="logo-github"></ion-icon>
+		</a>
+      </span>
+      <span style="--i:7;--x:1;--y:1;">
+	  <a title="Тут пусто">
+      	<ion-icon name="skull-outline"></ion-icon>
+		</a>
+      </span>
+    </div>
+    <div class="close"><ion-icon name="close-outline"></ion-icon></div>
+  </div>
+<script type="module"			       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"> </script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js">	     </script>
+<script>
+    let navigation = document.querySelector('.navigation');
+    let close = document.querySelector('.close');
+    navigation.onclick = function(){
+      navigation.classList.add('active');
+    }
+    close.onclick = function(){
+      navigation.classList.remove('active')
+    }
+</script>
     <link rel="stylesheet" href="assets/plugins/jquery-flipster/dist/jquery.flipster.min.css">
 </head>
 <body>
@@ -30,8 +87,7 @@
 
             <div class="container position-relative">
 
-				<nav class="navbar navbar-expand-lg" >
-                    <h1 class="site-logo"><a class="navbar-brand" href=""><span class="logo-text">JFE</span></a></h1></center>
+
 				</nav>
             </div><!--//container-->
 			
