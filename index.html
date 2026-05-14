@@ -223,9 +223,8 @@
       });
 
       const saved = localStorage.getItem('jfe-lang');
-      if (saved && (saved === 'ru' || saved === 'en')) {
-        setLang(saved);
-      }
+      const initial = saved === 'ru' || saved === 'en' ? saved : 'ru';
+      setLang(initial);
     })();
   </script>
 
