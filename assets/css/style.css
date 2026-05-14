@@ -1,0 +1,344 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0f1117;
+  --surface: #1a1d28;
+  --surface-hover: #242836;
+  --primary: #2dfc52;
+  --primary-dim: rgba(45, 252, 82, 0.15);
+  --text: #e1e4ed;
+  --text-dim: #7b84a0;
+  --text-bright: #ffffff;
+  --border: #2a2f3e;
+  --radius: 14px;
+  --radius-sm: 8px;
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ========== LANG SWITCHER ========== */
+.lang-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  display: flex;
+  gap: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 4px;
+}
+
+.lang-btn {
+  background: none;
+  border: none;
+  color: var(--text-dim);
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 6px 14px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: var(--transition);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.lang-btn.active {
+  background: var(--primary);
+  color: #0f1117;
+}
+
+.lang-btn:hover:not(.active) {
+  color: var(--text-bright);
+}
+
+/* ========== HERO / HEADER ========== */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 120px 24px 80px;
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  color: var(--text-bright);
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+}
+
+.hero h1 span {
+  color: var(--primary);
+}
+
+.hero .tagline {
+  font-size: 1.2rem;
+  color: var(--text-dim);
+  max-width: 500px;
+  margin-bottom: 32px;
+}
+
+.hero .rotating-text {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--primary);
+  min-height: 2em;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 40px;
+}
+
+.hero .rotating-text .line {
+  opacity: 0;
+  transform: translateY(12px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+.hero .rotating-text .line:nth-child(1) { animation-delay: 0.0s; }
+.hero .rotating-text .line:nth-child(2) { animation-delay: 0.15s; }
+.hero .rotating-text .line:nth-child(3) { animation-delay: 0.3s; }
+.hero .rotating-text .line:nth-child(4) { animation-delay: 0.45s; }
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ========== GITHUB BADGE ========== */
+.github-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 50px;
+  padding: 8px 20px 8px 8px;
+  text-decoration: none;
+  color: var(--text);
+  transition: var(--transition);
+  margin-bottom: 40px;
+}
+
+.github-badge:hover {
+  background: var(--surface-hover);
+  border-color: var(--primary);
+  transform: translateY(-2px);
+}
+
+.github-badge .logo-github-small {
+  flex-shrink: 0;
+}
+
+.github-badge span {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* ========== GIF SECTION ========== */
+.gif-section {
+  margin: 0 auto 60px;
+  text-align: center;
+}
+
+.gif-section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+}
+
+/* ========== BENEFITS ========== */
+.benefits {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 24px;
+  margin: 0 auto 80px;
+}
+
+.benefits h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--text-bright);
+  margin-bottom: 48px;
+}
+
+.benefits h2 span {
+  color: var(--primary);
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+}
+
+.benefit-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 36px 28px;
+  text-align: center;
+  transition: var(--transition);
+}
+
+.benefit-card:hover {
+  border-color: var(--primary);
+  transform: translateY(-6px);
+  box-shadow: 0 12px 40px rgba(45, 252, 82, 0.08);
+}
+
+.benefit-card .icon {
+  width: 64px;
+  height: 64px;
+  background: var(--primary-dim);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.benefit-card .icon img {
+  width: 32px;
+  height: 32px;
+  filter: brightness(0) saturate(100%) invert(70%) sepia(80%) hue-rotate(78deg);
+}
+
+.benefit-card h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--text-bright);
+  margin-bottom: 10px;
+}
+
+.benefit-card p {
+  font-size: 0.95rem;
+  color: var(--text-dim);
+  margin-bottom: 16px;
+}
+
+.benefit-card a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: var(--transition);
+}
+
+.benefit-card a:hover {
+  text-decoration: underline;
+}
+
+/* ========== NAV MENU ========== */
+.main {
+  position: fixed;
+  bottom: 32px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.about-link {
+  display: block;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.95rem;
+}
+
+.about-link a {
+  color: var(--primary);
+  text-decoration: none;
+  font-weight: 700;
+  transition: var(--transition);
+}
+
+.about-link a:hover {
+  text-decoration: underline;
+}
+
+/* ========== FOOTER ========== */
+footer {
+  width: 100%;
+  text-align: center;
+  padding: 32px 24px;
+  color: var(--text-dim);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--border);
+}
+
+footer a {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero .tagline {
+    font-size: 1rem;
+  }
+
+  .hero .rotating-text {
+    font-size: 1.1rem;
+  }
+
+  .benefits h2 {
+    font-size: 1.5rem;
+  }
+
+  .lang-switcher {
+    top: 12px;
+    right: 12px;
+  }
+
+  .lang-btn {
+    font-size: 0.75rem;
+    padding: 4px 10px;
+  }
+}
+
+/* ========== HIDDEN LANG ========== */
+[data-lang] {
+  display: none;
+}
+
+[data-lang].active {
+  display: block;
+}
+
+[data-lang].active-inline {
+  display: inline;
+}
